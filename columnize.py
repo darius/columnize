@@ -6,11 +6,6 @@ example below.
 
 See http://github.com/inky/see/ for how to include this in your Python
 startup.
-"""
-__author__ = 'Darius Bacon'
-__version__ = '0.1.0'
-__copyright__ = 'Copyright (c) 2009 Darius'
-__license__ = 'MIT X License'
 
 ## see('')
 #. __add__            __mod__         expandtabs   rindex      
@@ -42,6 +37,11 @@ __license__ = 'MIT X License'
 #. 
 
 ## columnize([])
+"""
+__author__ = 'Darius Bacon'
+__version__ = '0.1.0'
+__copyright__ = 'Copyright (c) 2009 Darius'
+__license__ = 'MIT X License'
 
 import math
 
