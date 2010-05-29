@@ -40,7 +40,7 @@ startup.
 """
 __author__ = 'Darius Bacon'
 __version__ = '0.1.0'
-__copyright__ = 'Copyright (c) 2009 Darius'
+__copyright__ = 'Copyright (c) 2009 Darius Bacon'
 __license__ = 'MIT X License'
 
 import math
