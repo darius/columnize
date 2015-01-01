@@ -44,8 +44,6 @@ __version__ = '0.1.0'
 __copyright__ = 'Copyright (c) 2009 Darius Bacon'
 __license__ = 'MIT X License'
 
-# (Maybe this should be called something other than see(), to avoid
-# confusion? But view() is harder to type -- hmph.)
 def see(x):
     "Show dir(x) in columns."
     columnize(dir(x))
@@ -70,10 +68,10 @@ def print_table(table, sep='  '):
     """Print a list of lists of strings as a table, so that columns
     line up nicely.  sep is the separator between columns."""
     # Adapted from print_table in utils.py in Peter Norvig's aima-python.
-    sizes = [max(map(len, column)) for column in transpose(table)]
+    widths = [max(map(len, column)) for column in transpose(table)]
     for row in table:
-        print sep.join(string.ljust(size)
-                       for string, size in zip(row, sizes))
+        print sep.join(string.ljust(width)
+                       for string, width in zip(row, widths))
 
 def transpose(m):
     return zip(*m)
