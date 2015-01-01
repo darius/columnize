@@ -7,34 +7,30 @@ example below.
 See http://github.com/inky/see/ for how to include this in your Python
 startup.
 
-## see('')
-#. __add__            __mod__         expandtabs   rindex      
-#. __class__          __mul__         find         rjust       
-#. __contains__       __ne__          index        rpartition  
-#. __delattr__        __new__         isalnum      rsplit      
-#. __doc__            __reduce__      isalpha      rstrip      
-#. __eq__             __reduce_ex__   isdigit      split       
-#. __ge__             __repr__        islower      splitlines  
-#. __getattribute__   __rmod__        isspace      startswith  
-#. __getitem__        __rmul__        istitle      strip       
-#. __getnewargs__     __setattr__     isupper      swapcase    
-#. __getslice__       __str__         join         title       
-#. __gt__             capitalize      ljust        translate   
-#. __hash__           center          lower        upper       
-#. __init__           count           lstrip       zfill       
-#. __le__             decode          partition                
-#. __len__            encode          replace                  
-#. __lt__             endswith        rfind                    
-#. 
+## see(0)
+#. __abs__            __hex__       __radd__        __rtruediv__      
+#. __add__            __index__     __rand__        __rxor__          
+#. __and__            __init__      __rdiv__        __setattr__       
+#. __class__          __int__       __rdivmod__     __sizeof__        
+#. __cmp__            __invert__    __reduce__      __str__           
+#. __coerce__         __long__      __reduce_ex__   __sub__           
+#. __delattr__        __lshift__    __repr__        __subclasshook__  
+#. __div__            __mod__       __rfloordiv__   __truediv__       
+#. __divmod__         __mul__       __rlshift__     __trunc__         
+#. __doc__            __neg__       __rmod__        __xor__           
+#. __float__          __new__       __rmul__        bit_length        
+#. __floordiv__       __nonzero__   __ror__         conjugate         
+#. __format__         __oct__       __rpow__        denominator       
+#. __getattribute__   __or__        __rrshift__     imag              
+#. __getnewargs__     __pos__       __rshift__      numerator         
+#. __hash__           __pow__       __rsub__        real              
 
 ## columnize('hello worrrrrrrrld 1 2 3 4 5 6 7 8 9'.split())
 #. hello          1   3   5   7   9  
 #. worrrrrrrrld   2   4   6   8      
-#. 
 
 ## columnize(['x'])
 #. x  
-#. 
 
 ## columnize([])
 """
