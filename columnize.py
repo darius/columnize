@@ -55,7 +55,7 @@ def columnize(strings):
 def tabulate(strings, width=76):
     """Given a sequence of strings, return a matrix of the same
     strings in column order, trying to fit them in the given width."""
-    maxwidth = 2 + max([0] + map(len, strings))
+    maxwidth = 2 + max([0] + list(map(len, strings)))
     ncols = max(1, min(len(strings), width // maxwidth))
     nrows = max(1, (len(strings) + ncols - 1) // ncols)
     t = [strings[i:i+nrows]
@@ -70,8 +70,8 @@ def print_table(table, sep='  '):
     # Adapted from print_table in utils.py in Peter Norvig's aima-python.
     widths = [max(map(len, column)) for column in transpose(table)]
     for row in table:
-        print sep.join(string.ljust(width)
-                       for string, width in zip(row, widths))
+        print(sep.join(string.ljust(width)
+                       for string, width in zip(row, widths)))
 
 def transpose(m):
-    return zip(*m)
+    return list(zip(*m))
